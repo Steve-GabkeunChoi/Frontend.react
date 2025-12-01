@@ -157,7 +157,7 @@ Netlify: Build `npm run build` / Publish `dist` / Redirects 필요 시 `_redirec
 - CSRF: 현재 서버 없음 → API 도입 시 CSRF 토큰 또는 SameSite 쿠키 설정 고려
 
 ## GitHub 업로드 절차
-원격 저장소: https://github.com/Steve-GabkeunChoi/Frontend.react.git
+원격 저장소: 
 
 1. Git 초기화 (이미 되어 있다면 생략)
 ```bash
@@ -182,19 +182,3 @@ git push -u origin main
 ```
 
 (이미 `origin`이 존재한다면 `git remote set-url origin ...`으로 변경 가능)
-
-## 이후 확장 아이디어 (요약)
-- 백엔드 API 연동 / 권한(Role) 기반 접근 제어
-- 고급 에디터(이미지/마크다운) & 파일 업로드
-- 다크 모드 / 사용자 설정 저장
-- 실시간 기능(WebSocket, SSE)로 조회수/댓글 반영
-- Vitest + E2E(Playwright) 자동화 테스트
-
-## 간단 문제 해결 (FAQ)
-- 글 저장 안 됨: 브라우저 `localStorage` 허용 여부 / 시크릿 모드 확인
-- 페이지 안 뜸: 개발 서버 포트 충돌 시 Vite가 자동 변경 → 터미널 로그에서 포트 확인
-- 로그인 실패: 아이디/비밀번호 최소 길이 / 케이스(대소문자) 확인
-- 스타일 이상: Tailwind JIT는 content 경로 기반 → 신규 파일 경로 누락 여부 확인
-
-## 라이선스
-데모 용도. 필요 시 프로젝트 요구사항에 맞게 수정하세요.
